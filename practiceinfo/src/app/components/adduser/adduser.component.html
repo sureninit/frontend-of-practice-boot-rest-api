@@ -1,0 +1,26 @@
+<p>adduser works!</p>
+<form (ngSubmit)="userSave(userForm.value)" [formGroup]="userForm"> 
+    <!-- <form> -->
+    <div class="col-8">
+        <div>
+            <label>Username</label>
+            <input type="text" class="form-control" formControlName="name">
+        </div>
+        <div>
+            <label>password</label>
+            <input type="password" class="form-control" formControlName="password">
+        </div>
+        <div>
+            <label>mobile</label>
+            <input type="number" class="form-control" formControlName="mobile">
+        </div>
+        <div>
+            <label>DateOfBirth</label>
+            <input type="date" class="form-control" formControlName="dob">
+        </div>
+        <div>
+           
+            <input type="submit" value="submit" class="btn btn-success mt-2">
+        </div>
+    </div>
+</form>
